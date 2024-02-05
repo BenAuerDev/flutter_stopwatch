@@ -1,17 +1,20 @@
 import 'package:flutter/scheduler.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import 'package:flutter_animated_stopwatch/src/models/stopwatch_data.dart';
 
-class StopwatchNotifier extends StateNotifier<StopwatchData> {
-  StopwatchNotifier()
-      : super(
-          const StopwatchData(
-            previouslyElapsed: Duration.zero,
-            currentlyElapsed: Duration.zero,
-            isRunning: false,
-          ),
-        );
+part 'stopwatch_service.g.dart';
+
+@riverpod
+class StopwatchState extends _$StopwatchState {
+  @override
+  StopwatchData build() {
+    return const StopwatchData(
+      previouslyElapsed: Duration.zero,
+      currentlyElapsed: Duration.zero,
+      isRunning: false,
+    );
+  }
 
   Ticker? _ticker;
 
@@ -62,8 +65,3 @@ class StopwatchNotifier extends StateNotifier<StopwatchData> {
     );
   }
 }
-
-final stopwatchProvider =
-    StateNotifierProvider<StopwatchNotifier, StopwatchData>(
-  (ref) => StopwatchNotifier(),
-);
