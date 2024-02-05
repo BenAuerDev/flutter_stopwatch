@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'package:flutter_animated_stopwatch/src/controllers/stopwatch_service.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class StartStopButton extends ConsumerWidget {
   const StartStopButton({super.key, this.onPressed});
@@ -9,7 +9,7 @@ class StartStopButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isRunning = ref.watch(stopwatchProvider).isRunning;
+    final isRunning = ref.watch(stopwatchStateProvider).isRunning;
     return ClipOval(
       child: Material(
         color: isRunning ? Colors.red[900] : Colors.green[900], // button color

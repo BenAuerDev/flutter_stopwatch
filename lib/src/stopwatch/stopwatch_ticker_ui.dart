@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'package:flutter_animated_stopwatch/src/controllers/stopwatch_service.dart';
 import 'package:flutter_animated_stopwatch/src/stopwatch/clock_hand.dart';
 import 'package:flutter_animated_stopwatch/src/stopwatch/text/elapsed_time_text.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class StopwatchTickerUi extends ConsumerWidget {
   const StopwatchTickerUi({
@@ -17,7 +17,7 @@ class StopwatchTickerUi extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final elapsed = ref.watch(stopwatchProvider).currentlyElapsed;
+    final elapsed = ref.watch(stopwatchStateProvider).currentlyElapsed;
 
     return Stack(
       children: [

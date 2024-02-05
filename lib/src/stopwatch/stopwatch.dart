@@ -12,7 +12,7 @@ class Stopwatch extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final stopwatch = ref.watch(stopwatchProvider.notifier);
+    final stopwatch = ref.watch(stopwatchStateProvider.notifier);
 
     return LayoutBuilder(
       builder: (context, constraints) {
