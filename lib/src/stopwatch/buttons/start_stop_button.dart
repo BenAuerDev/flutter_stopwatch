@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animated_stopwatch/src/controllers/stopwatch_service.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import 'package:flutter_animated_stopwatch/src/controllers/stopwatch_service.dart';
 
 class StartStopButton extends ConsumerWidget {
   const StartStopButton({super.key, this.onPressed});

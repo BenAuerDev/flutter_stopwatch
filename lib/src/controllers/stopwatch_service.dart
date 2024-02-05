@@ -1,6 +1,7 @@
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_animated_stopwatch/src/models/stopwatch_data.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import 'package:flutter_animated_stopwatch/src/models/stopwatch_data.dart';
 
 class StopwatchNotifier extends StateNotifier<StopwatchData> {
   StopwatchNotifier()

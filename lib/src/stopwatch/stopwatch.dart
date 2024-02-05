@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+
 import 'package:flutter_animated_stopwatch/src/controllers/stopwatch_service.dart';
 import 'package:flutter_animated_stopwatch/src/stopwatch/buttons/reset_button.dart';
 import 'package:flutter_animated_stopwatch/src/stopwatch/buttons/start_stop_button.dart';
-import 'package:flutter_animated_stopwatch/src/stopwatch/stopwatch_ticker_ui.dart';
-
 import 'package:flutter_animated_stopwatch/src/stopwatch/stopwatch_renderer.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:flutter_animated_stopwatch/src/stopwatch/stopwatch_ticker_ui.dart';
 
 class Stopwatch extends ConsumerWidget {
   const Stopwatch({super.key});

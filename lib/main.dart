@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animated_stopwatch/src/home_page.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+
+import 'package:flutter_animated_stopwatch/src/home_page.dart';
 
 void main() {
   runApp(
