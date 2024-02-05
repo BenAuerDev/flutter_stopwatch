@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animated_stopwatch/src/stopwatch/stopwatch.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -7,7 +8,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Hello, World!'),
+        child: Padding(
+          padding: EdgeInsets.all(32),
+          child: AspectRatio(
+            aspectRatio: 0.85,
+            child: Stopwatch(),
+          ),
+        ),
       ),
     );
   }
