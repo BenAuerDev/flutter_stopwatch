@@ -1,16 +1,27 @@
-# flutter_animated_stopwatch
+# Flutter Animated Stopwatch
 
-A new Flutter project.
+A 100% code Stopwatch-UI with state managed by Riverpod
 
-## Getting Started
+To clone the Repository navigate to the desired directory and run:
 
-This project is a starting point for a Flutter application.
+```bash
+git clone https://github.com/BenAuerDev/flutter_animated_stopwatch.git
+```
 
-A few resources to get you started if this is your first Flutter project:
+Then navigate to the project by running
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+cd ./flutter_animated_stopwatch
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+After that you can install all dependencies by running this command from the project-root directory
+
+```bash
+flutter pub get
+```
+
+Then all you need to do is run:
+
+```bash
+flutter run
+```
