@@ -1,7 +1,7 @@
 import 'package:flutter/scheduler.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import 'package:flutter_animated_stopwatch/src/models/stopwatch_data.dart';
+import 'package:flutter_animated_stopwatch/src/features/stopwatch/domain/stopwatch_data.dart';
 
 part 'stopwatch_service.g.dart';
 

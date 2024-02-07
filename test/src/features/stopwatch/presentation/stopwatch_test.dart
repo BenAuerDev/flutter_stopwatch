@@ -1,5 +1,5 @@
 import 'package:flutter_animated_stopwatch/main.dart';
-import 'package:flutter_animated_stopwatch/src/controllers/stopwatch_service.dart';
+import 'package:flutter_animated_stopwatch/src/features/stopwatch/application/stopwatch_service.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

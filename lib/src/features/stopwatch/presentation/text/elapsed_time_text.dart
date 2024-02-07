@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animated_stopwatch/src/stopwatch/text/time_digit.dart';
+import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/text/time_digit.dart';
 
 class ElapsedTimeText extends StatelessWidget {
   const ElapsedTimeText({super.key, required this.elapsed});

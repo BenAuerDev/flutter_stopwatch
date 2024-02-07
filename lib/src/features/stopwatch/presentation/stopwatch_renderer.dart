@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animated_stopwatch/src/stopwatch/markers/clock_seconds_tick_marker.dart';
-import 'package:flutter_animated_stopwatch/src/stopwatch/markers/clock_text_marker.dart';
+import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/markers/clock_seconds_tick_marker.dart';
+import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/markers/clock_text_marker.dart';
 
 class StopwatchRenderer extends StatelessWidget {
   const StopwatchRenderer({super.key, required this.radius});
