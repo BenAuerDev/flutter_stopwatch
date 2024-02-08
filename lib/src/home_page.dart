@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animated_stopwatch/src/features/laps/presentation/lap_list.dart';
 import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/stopwatch.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,10 +8,13 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(
-        children: [
-          Stopwatch(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Stopwatch(),
+            LapList(),
+          ],
+        ),
       ),
     );
   }
