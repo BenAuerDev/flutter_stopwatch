@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animated_stopwatch/src/features/laps/application/lap_service.dart';
 import 'package:flutter_animated_stopwatch/src/features/stopwatch/application/stopwatch_service.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -34,6 +35,19 @@ class Stopwatch extends ConsumerWidget {
                       onPressed: () {
                         stopwatch.toggleStartStop();
                       },
+                    ),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child: SizedBox(
+                    width: 80,
+                    height: 40,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        ref.read(lapServiceProvider.notifier).lap();
+                      },
+                      child: const Text('Lap'),
                     ),
                   ),
                 ),
