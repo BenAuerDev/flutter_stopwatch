@@ -2,7 +2,7 @@
 
 A 100% code Stopwatch-UI with state managed by Riverpod
 
-To clone the Repository navigate to the desired directory and run:
+To clone the Repository navigate to the desired directory on your machine and run:
 
 ```bash
 git clone https://github.com/BenAuerDev/flutter_animated_stopwatch.git
