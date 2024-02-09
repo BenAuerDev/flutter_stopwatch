@@ -19,9 +19,10 @@ void main() {
   testWidgets('Stopwatch controls are displayed correctly', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: MyApp()));
 
-    // Expect to find the start and reset buttons
-    expect(find.text('Start'), findsOneWidget);
+    // Expect to find the start, Lap and reset buttons
     expect(find.text('Reset'), findsOneWidget);
+    expect(find.text('Lap'), findsOneWidget);
+    expect(find.text('Start'), findsOneWidget);
   });
 
   testWidgets('isRunning is initially false', (tester) async {
