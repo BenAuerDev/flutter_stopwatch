@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animated_stopwatch/src/features/laps/application/lap_service.dart';
 import 'package:flutter_animated_stopwatch/src/features/stopwatch/application/stopwatch_service.dart';
+import 'package:flutter_animated_stopwatch/src/utils/handle_scaffold_message.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/buttons/reset_button.dart';
@@ -46,6 +47,8 @@ class Stopwatch extends ConsumerWidget {
                     child: ElevatedButton(
                       onPressed: () {
                         ref.read(lapServiceProvider.notifier).lap();
+
+                        handleScaffoldMessage(context, 'Lap added');
                       },
                       child: const Text('Lap'),
                     ),
