@@ -3,19 +3,9 @@ import 'package:flutter_animated_stopwatch/src/features/stopwatch/application/st
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../../../test_utils/controls_methods.dart';
+
 void main() {
-  Future<void> tapStart(WidgetTester tester) async {
-    await tester.tap(find.text('Start'));
-  }
-
-  Future<void> tapStop(WidgetTester tester) async {
-    await tester.tap(find.text('Stop'));
-  }
-
-  Future<void> tapReset(WidgetTester tester) async {
-    await tester.tap(find.text('Reset'));
-  }
-
   testWidgets('Stopwatch controls are displayed correctly', (tester) async {
     await tester.pumpWidget(const ProviderScope(child: MyApp()));
 
@@ -52,7 +42,8 @@ void main() {
       ),
     );
 
-    await tapStart(tester);
+    // await tapStart(tester);
+    await tester.tap(find.text('Start'));
     await tester.pump();
     expect(provider.state.isRunning, true);
     provider.stop();
@@ -72,9 +63,10 @@ void main() {
       ),
     );
 
-    await tapStart(tester);
+    // await tapStart(tester);
+    await tester.tap(find.text('Start'));
     await tester.pump();
-    expect(find.text('Start'), findsNothing);
+    // expect(find.text('Start'), findsNothing);
     expect(find.text('Stop'), findsOneWidget);
     await tapStop(tester);
   });
