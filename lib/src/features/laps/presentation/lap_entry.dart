@@ -31,13 +31,13 @@ class LapEntry extends StatelessWidget {
       }
       switch (n % 10) {
         case 1:
-          return "${n}  st";
+          return "$n  st";
         case 2:
-          return "${n} nd";
+          return "$n nd";
         case 3:
-          return "${n}  rd";
+          return "$n  rd";
         default:
-          return "${n}  th";
+          return "$n  th";
       }
     }
 
