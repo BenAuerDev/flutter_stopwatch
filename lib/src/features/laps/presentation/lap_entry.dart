@@ -47,6 +47,7 @@ class LapEntry extends StatelessWidget {
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      key: const Key('lapEntry'),
       children: [
         Text(
           formatPlacement(placement),

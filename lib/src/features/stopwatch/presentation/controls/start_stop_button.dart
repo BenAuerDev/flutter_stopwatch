@@ -13,6 +13,7 @@ class StartStopButton extends ConsumerWidget {
       child: Material(
         color: isRunning ? Colors.red[900] : Colors.green[900], // button color
         child: InkWell(
+          key: const Key('startStopButton'),
           onTap: onPressed,
           child: Align(
             alignment: Alignment.center,

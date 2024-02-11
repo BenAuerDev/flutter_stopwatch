@@ -1,19 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-Future<void> tapStart(WidgetTester tester) async {
-  print('tapStart');
-  await tester.tap(find.byKey(const Key('startStopButton')));
+/// Taps on The Start/Stop Button
+///
+/// It's the same Button as the Button
+///
+/// only changes it's Text to
+///
+/// Start when not running
+///
+/// and Stop when running
+Future<void> tapStartStopButton(WidgetTester tester) async {
+  await tester.tap(
+    find.byKey(const Key('startStopButton')),
+    warnIfMissed: false,
+  );
 }
 
-Future<void> tapStop(WidgetTester tester) async {
-  await tester.tap(find.text('Stop'));
+/// Taps on The Lap Button
+Future<void> tapLapButton(WidgetTester tester) async {
+  await tester.tap(
+    find.byKey(const Key('lapButton')),
+    warnIfMissed: false,
+  );
 }
 
-Future<void> tapLap(WidgetTester tester) async {
-  await tester.tap(find.text('Lap'));
-}
-
-Future<void> tapReset(WidgetTester tester) async {
-  await tester.tap(find.text('Reset'));
+/// Taps on The Reset Button
+Future<void> tapResetButton(WidgetTester tester) async {
+  await tester.tap(
+    find.byKey(const Key('resetButton')),
+    warnIfMissed: false,
+  );
 }

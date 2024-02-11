@@ -10,6 +10,7 @@ class ResetButton extends StatelessWidget {
       child: Material(
         color: Colors.grey[900], // button color
         child: InkWell(
+          key: const Key('resetButton'),
           onTap: onPressed,
           child: const Align(
             alignment: Alignment.center,

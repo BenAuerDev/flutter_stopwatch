@@ -8,6 +8,7 @@ class LapButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+      key: const Key('lapButton'),
       onPressed: onPressed,
       child: const Text('Lap'),
     );
