@@ -2,6 +2,12 @@
 
 A 100% code Stopwatch-UI with state managed by Riverpod
 
+<div style="display: flex;">
+    <img src="https://github.com/BenAuerDev/flutter_animated_stopwatch/assets/136239531/5f69abf7-7bc8-4a50-a362-6a418549f02a" alt="Stopwatch initial" style="width: 45%;">
+    <img src="https://github.com/BenAuerDev/flutter_animated_stopwatch/assets/136239531/897f97a7-634e-4836-9017-f36e42782122" alt="Stopwatch with laps" style="width: 45%;">
+</div>
+</br>
+
 To clone the Repository navigate to the desired directory on your machine and run:
 
 ```bash
