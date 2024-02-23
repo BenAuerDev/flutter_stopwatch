@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_animated_stopwatch/src/features/stopwatch/application/stopwatch_service.dart';
-import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/clock_hand.dart';
+import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/clock_hand/clock_hand_renderer.dart';
 import 'package:flutter_animated_stopwatch/src/features/stopwatch/presentation/text/elapsed_time_text.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -23,7 +23,7 @@ class StopwatchTickerUi extends ConsumerWidget {
         Positioned(
           left: radius,
           top: radius,
-          child: ClockHand(
+          child: ClockHandRenderer(
             handLength: radius,
             handThickness: 2,
             rotationZAngle: pi + (2 * pi / 60000) * elapsed.inMilliseconds,
