@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ClockHand extends StatelessWidget {
-  const ClockHand({
+class SimpleClockHand extends StatelessWidget {
+  const SimpleClockHand({
     super.key,
     required this.rotationZAngle,
     required this.handThickness,
